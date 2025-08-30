@@ -96,8 +96,8 @@ while True:
     # Check for a collision
     if head.distance(apple) < 20:
         # Move the food to a random spot in the screen
-        x = random.randint(-290, 290)
-        y = random.randint(-290, 290)
+        x = random.randint(-280, 280)
+        y = random.randint(-280, 280)
         apple.goto(x, y)
         score += 10
         pen.clear()
@@ -158,6 +158,7 @@ while True:
                 segment.goto(1000, 1000)
             segments.clear()
     time.sleep(delay)
+
 
 
 wn.mainloop()
